@@ -31,6 +31,10 @@ ec_edit <- function(x, room = NULL, browse = TRUE, ..., ec_host =ethercalc_host(
     verb = verb,
     url = ec_url,
     httr::content_type("text/csv"),
+    httr::add_headers(
+      `Accept-Encoding` = "",
+      `User-Agent` = ""
+    ),
     encode = "raw",
     body = paste0(capture.output(write.csv(x, row.names = FALSE, ...)), collapse = "\n")
   ) -> res

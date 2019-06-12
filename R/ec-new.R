@@ -11,7 +11,7 @@ ec_new <- function(room, browse = TRUE, ec_host = ethercalc_host()) {
 
   room <- room[1]
 
-  if (browse) ec_view(room = rom, ec_host = ec_host)
+  if (browse) ec_view(room = room, ec_host = ec_host)
 
   invisible(glue::glue("{ec_host}/{room}"))
 
