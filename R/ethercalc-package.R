@@ -12,7 +12,7 @@
 #' @name ethercalc
 #' @keywords internal
 #' @author Bob Rudis (bob@@rud.is)
-#' @import httr
+#' @import httr processx
 #' @importFrom utils browseURL
 #' @importFrom jsonlite fromJSON
 "_PACKAGE"

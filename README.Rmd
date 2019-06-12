@@ -27,6 +27,7 @@ collaborative spreadsheet that can be run locally on virtually any modern operat
 
 The following functions are implemented:
 
+- `ec_start`:	Start an EtherCalc instance (requires you to install EtherCalc first)
 - `ec_new`:	Create a new, empty EtherCalc "room"
 - `ec_view`:	Open a browser window/tab to an EtherCalc "room"
 - `ec_list`:	List all of the available EtherCalc documents
