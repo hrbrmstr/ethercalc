@@ -14,7 +14,7 @@
 ec_list <- function(all = FALSE, ec_host = ethercalc_host()) {
 
   httr::GET(
-    url = "{ec_host}/_rooms"
+    url = glue::glue("{ec_host}/_rooms")
   ) -> res
 
   httr::stop_for_status(res)
