@@ -1,0 +1,56 @@
+---
+output: rmarkdown::github_document
+editor_options: 
+  chunk_output_type: inline
+---
+```{r pkg-knitr-opts, include=FALSE}
+knitr$opts_chunk$set(collapse=TRUE, fig.retina=2, message=FALSE, warning=FALSE)
+options(width=120)
+```
+
+[![Travis-CI Build Status](https://travis-ci.org/hrbrmstr/ethercalc.svg?branch=master)](https://travis-ci.org/hrbrmstr/ethercalc) 
+[![Coverage Status](https://codecov.io/gh/hrbrmstr/ethercalc/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/ethercalc)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ethercalc)](https://cran.r-project.org/package=ethercalc)
+
+# ethercalc
+
+## Description
+
+## What's Inside The Tin
+
+The following functions are implemented:
+
+## Installation
+
+```{r install-ex, eval=FALSE}
+devtools::install_git("https://git.sr.ht/~hrbrmstr/ethercalc.git")
+# or
+devtools::install_git("https://git.rud.is/hrbrmstr/ethercalc.git")
+# or
+devtools::install_gitlab("hrbrmstr/ethercalc")
+# or
+devtools::install_bitbucket("hrbrmstr/ethercalc")
+# or
+devtools::install_github("hrbrmstr/ethercalc")
+```
+
+## Usage
+
+```{r lib-ex}
+library(ethercalc)
+
+# current version
+packageVersion("ethercalc")
+
+```
+
+## ethercalc Metrics
+
+```{r cloc, echo=FALSE}
+cloc::cloc_pkg_md()
+```
+
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
+By participating in this project you agree to abide by its terms.
