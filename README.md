@@ -22,13 +22,18 @@ orchestrate and exchange data with ‘EtherCalc’ instances.
 
 The following functions are implemented:
 
+  - `ec_start`: Start an EtherCalc instance (requires you to install
+    EtherCalc first)
   - `ec_new`: Create a new, empty EtherCalc “room”
   - `ec_view`: Open a browser window/tab to an EtherCalc “room”
   - `ec_list`: List all of the available EtherCalc documents
   - `ec_edit`: Edit a data frame in a new or existing EtherCalc “room”
+  - `ec_append`: Append a data frame to a “room”, optionally starting at
+    a given row
   - `ec_delete`: Delete a “room” from an EtherCalc instance
   - `ec_export`: Export an EtherCalc “room” to a local data frame
   - `ec_exists`: Does an EtherCalc “room” name exist?
+  - `ec_cmd`: Issue EtherCalc “commands” to a room
   - `ethercalc_host`: Get or set ETHERCALC\_HOST value
 
 ## Installation
@@ -59,8 +64,8 @@ packageVersion("ethercalc")
 
 | Lang | \# Files |  (%) | LoC |  (%) | Blank lines |  (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | ---: | ----------: | ---: | -------: | ---: |
-| R    |       10 | 0.91 | 100 | 0.91 |          63 | 0.77 |       87 | 0.67 |
-| Rmd  |        1 | 0.09 |  10 | 0.09 |          19 | 0.23 |       43 | 0.33 |
+| R    |       13 | 0.93 | 162 | 0.94 |          86 | 0.82 |      125 | 0.73 |
+| Rmd  |        1 | 0.07 |  10 | 0.06 |          19 | 0.18 |       46 | 0.27 |
 
 ## Code of Conduct
 

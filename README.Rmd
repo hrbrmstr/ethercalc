@@ -32,9 +32,11 @@ The following functions are implemented:
 - `ec_view`:	Open a browser window/tab to an EtherCalc "room"
 - `ec_list`:	List all of the available EtherCalc documents
 - `ec_edit`:	Edit a data frame in a new or existing EtherCalc "room"
+- `ec_append`:	Append a data frame to a "room", optionally starting at a given row
 - `ec_delete`:	Delete a "room" from an EtherCalc instance
 - `ec_export`:	Export an EtherCalc "room" to a local data frame
 - `ec_exists`:	Does an EtherCalc "room" name exist?
+- `ec_cmd`:	Issue EtherCalc "commands" to a room
 - `ethercalc_host`:	Get or set ETHERCALC_HOST value
 
 ## Installation

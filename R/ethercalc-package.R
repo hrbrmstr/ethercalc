@@ -5,7 +5,7 @@
 #' Methods are provided to orchestrate and exchange data with 'EtherCalc' instances.
 #'
 #' \if{html}{
-#' \figure{ethercalc-example.gif}{options: width="100\%" alt="Figure: statash01.png"}
+#' \figure{ethercalc-example.gif}{options: width="100\%" alt="Figure: EtherCalc in action"}
 #' }
 #'
 #' @md

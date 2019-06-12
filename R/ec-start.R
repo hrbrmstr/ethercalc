@@ -6,6 +6,9 @@
 #' instance will stop when the R session is termianted). You can
 #' also add arguments to the call via the `args` parameter.
 #'
+#' You _really_ should consider installing and running a local copy of `redis` to get
+#' an efficient, persistent store for your spreadsheets.
+#'
 #' @param host,port interface and port for `ethercalc` to bind to. Defaults
 #'        to `localhost` and `8000`.
 #' @param args optional arguments to pass in to the `ethercalc` executable

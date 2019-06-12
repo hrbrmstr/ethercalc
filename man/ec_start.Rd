@@ -22,3 +22,7 @@ You should save the return value since that will allow you to stop the instance 
 instance will stop when the R session is termianted). You can
 also add arguments to the call via the \code{args} parameter.
 }
+\details{
+You \emph{really} should consider installing and running a local copy of \code{redis} to get
+an efficient, persistent store for your spreadsheets.
+}
