@@ -4,11 +4,15 @@
 \name{ethercalc}
 \alias{ethercalc}
 \alias{ethercalc-package}
-\title{...}
+\title{Orchestrate and Exchange Data with 'EtherCalc' Instances}
 \description{
-\itemize{
-\item URL: \url{https://gitlab.com/hrbrmstr/ethercalc}
-\item BugReports: \url{https://gitlab.com/hrbrmstr/ethercalc/issues}
+The 'EtherCalc' (\url{https://ethercalc.net/}) web application is a multi-user,
+collaborative spreadsheet that can be run locally on virtually any modern operating system.
+Methods are provided to orchestrate and exchange data with 'EtherCalc' instances.
+}
+\details{
+\if{html}{
+\figure{ethercalc-example.gif}{options: width="100\%" alt="Figure: statash01.png"}
 }
 }
 \seealso{
