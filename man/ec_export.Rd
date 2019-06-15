@@ -20,8 +20,21 @@ are responsible for naming the file (including extension).}
 
 \item{ec_host}{See \code{\link[=ethercalc_host]{ethercalc_host()}}}
 }
+\value{
+a \code{raw} vector containing the contents of what was written to \code{path}.
+}
 \description{
 Export an EtherCalc "room" to a local file
+}
+\examples{
+\dontrun{
+ec_edit(mtcars, "mtcars")
+ec_export("mtcars", "csv", "mtcars.csv")
+ec_export("mtcars", "json", "mtcars.json")
+ec_export("mtcars", "html", "mtcars.html")
+ec_export("mtcars", "md", "mtcars.md")
+ec_export("mtcars", "xlsx", "mtcars.xlsx")
+}
 }
 \seealso{
 Other EthercCalc importers/exporters: \code{\link{ec_append}},
