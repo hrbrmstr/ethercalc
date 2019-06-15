@@ -4,8 +4,8 @@
 \alias{ec_append}
 \title{Append a data frame to a "room", optionally starting at a given row}
 \usage{
-ec_append(x, room, at = "end", browse = FALSE, ...,
-  ec_host = ethercalc_host())
+ec_append(x, room, at = "end", append = TRUE, col_names = FALSE,
+  browse = FALSE, ..., ec_host = ethercalc_host())
 }
 \arguments{
 \item{x}{a data frame}
@@ -13,6 +13,8 @@ ec_append(x, room, at = "end", browse = FALSE, ...,
 \item{room}{name of an existing EtherCalc "room".}
 
 \item{at}{if not "\code{end}" then the row where the data will be inserted and pasted at.}
+
+\item{append, col_names}{see \code{\link[readr:write_csv]{readr::write_csv()}} and this function's Note}
 
 \item{browse}{if \code{TRUE} (\code{FALSE} is the default) then open up a browser tab/window to
 the room}
@@ -27,7 +29,18 @@ the commands used by EtherCalc to process the append operation (invisibly)
 \description{
 Append a data frame to a "room", optionally starting at a given row
 }
+\note{
+Since this is an append operation the header will not be sent. Set
+\code{col_names} and \code{append} (both) to \code{TRUE}
+
+You will receive an error if \code{x} has a total cell count over 500,000.
+}
 \examples{
 ec_edit(iris, "test")
 ec_append(iris, "test")
 }
+\seealso{
+Other EthercCalc importers/exporters: \code{\link{ec_edit}},
+  \code{\link{ec_export}}, \code{\link{ec_read}}
+}
+\concept{EthercCalc importers/exporters}

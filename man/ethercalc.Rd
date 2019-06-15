@@ -10,11 +10,6 @@ The 'EtherCalc' (\url{https://ethercalc.net/}) web application is a multi-user,
 collaborative spreadsheet that can be run locally on virtually any modern operating system.
 Methods are provided to orchestrate and exchange data with 'EtherCalc' instances.
 }
-\details{
-\if{html}{
-\figure{ethercalc-example.gif}{options: width="100\%" alt="Figure: EtherCalc in action"}
-}
-}
 \seealso{
 Useful links:
 \itemize{

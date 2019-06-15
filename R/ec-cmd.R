@@ -1,5 +1,7 @@
 #' Issue EtherCalc "commands" to a room
 #'
+#' TODO find a cmd ref
+#'
 #' @param commands character vector of valid EtherCalc commands
 #' @param room name of an EtherCalc "room"
 #' @param ec_host See [ethercalc_host()]

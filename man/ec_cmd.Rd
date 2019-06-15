@@ -14,7 +14,7 @@ ec_cmd(commands = "", room, ec_host = ethercalc_host())
 \item{ec_host}{See \code{\link[=ethercalc_host]{ethercalc_host()}}}
 }
 \description{
-Issue EtherCalc "commands" to a room
+TODO find a cmd ref
 }
 \examples{
 ec_cmd(c("set A1:E1 font normal bold \\* \\*", "deleterow A12"), "test")

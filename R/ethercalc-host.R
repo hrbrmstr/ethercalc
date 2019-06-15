@@ -31,7 +31,7 @@ ethercalc_host <- function(force = FALSE) {
 
   val <- readline(": ")
 
-  if (identical(pat, "")) {
+  if (identical(val, "")) {
     stop("URL prefix of your EtherCalc instance entry failed", call. = FALSE)
   }
 

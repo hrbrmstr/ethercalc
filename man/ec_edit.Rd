@@ -21,6 +21,14 @@ ec_edit(x, room = NULL, browse = TRUE, ...,
 \description{
 Edit a data frame in a new or existing EtherCalc "room"
 }
+\note{
+You will receive an error if \code{x} has a total cell count over 500,000.
+}
 \examples{
 ec_edit(iris, "test")
 }
+\seealso{
+Other EthercCalc importers/exporters: \code{\link{ec_append}},
+  \code{\link{ec_export}}, \code{\link{ec_read}}
+}
+\concept{EthercCalc importers/exporters}

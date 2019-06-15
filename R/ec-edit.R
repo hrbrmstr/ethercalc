@@ -1,16 +1,29 @@
 #' Edit a data frame in a new or existing EtherCalc "room"
 #'
 #' @param x a data frame
+#' @note You will receive an error if `x` has a total cell count over 500,000.
 #' @param room name of an existing EtherCalc "room" or `NULL` to create a new one
 #' @param browse if `TRUE` (default) then open up a browser tab/window to the new room
 #' @param ... passed on to [write.csv()]
 #' @param ec_host See [ethercalc_host()]
+#' @family EthercCalc importers/exporters
 #' @export
 #' @examples
 #' ec_edit(iris, "test")
 ec_edit <- function(x, room = NULL, browse = TRUE, ..., ec_host =ethercalc_host()) {
 
   stopifnot(is.data.frame(x))
+
+  cell_ct <- Reduce(`*`, dim(x))
+
+  if (cell_ct > .EC_MAX_CELLS) {
+    stop(
+      "EtherCalc's behaviour is unstable when posting a data frame with ",
+      "more than 500,000 total cells. Your data frame has a total of ",
+      formatC(cell_ct, format = "d", big.mark = ","), " cells.",
+      call.=FALSE
+    )
+  }
 
   verb <- NULL
 
@@ -36,7 +49,7 @@ ec_edit <- function(x, room = NULL, browse = TRUE, ..., ec_host =ethercalc_host(
       `User-Agent` = ""
     ),
     encode = "raw",
-    body = paste0(capture.output(write.csv(x, row.names = FALSE, ...)), collapse = "\n")
+    body = to_csv_text(x)
   ) -> res
 
   httr::stop_for_status(res)

@@ -14,7 +14,7 @@ Description: The 'EtherCalc' (<https://ethercalc.net/>) web application is a mul
 URL: https://gitlab.com/hrbrmstr/ethercalc
 BugReports: https://gitlab.com/hrbrmstr/ethercalc/issues
 Encoding: UTF-8
-License: AGPL
+License: MIT + file LICENSE
 Suggests:
     testthat,
     covr
@@ -24,6 +24,10 @@ Imports:
     httr,
     jsonlite,
     processx,
-    utils
+    utils,
+    xml2,
+    readr,
+    magrittr,
+    glue
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1

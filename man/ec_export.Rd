@@ -2,15 +2,29 @@
 % Please edit documentation in R/ec-export.R
 \name{ec_export}
 \alias{ec_export}
-\title{Export an EtherCalc "room" to a local data frame}
+\title{Export an EtherCalc "room" to a local file}
 \usage{
-ec_export(room, ec_host = ethercalc_host())
+ec_export(room, type = c("csv", "json", "html", "md", "xlsx"), path,
+  overwrite = TRUE, ec_host = ethercalc_host())
 }
 \arguments{
 \item{room}{name of an EtherCalc "room"}
 
+\item{type}{EtherCalc supports exporting as CSV, JSON, HTML, markdown, or Excel.
+Use "\code{csv}", "\code{json}", "\code{html}", "\code{md}", or "\code{xlsx}" (respectively).}
+
+\item{path}{place to save the file. Value will be \code{\link[=path.expand]{path.expand()}}ed but you
+are responsible for naming the file (including extension).}
+
+\item{overwrite}{overwrite \code{path} if a file exists? Default: \code{TRUE}.}
+
 \item{ec_host}{See \code{\link[=ethercalc_host]{ethercalc_host()}}}
 }
 \description{
-Export an EtherCalc "room" to a local data frame
+Export an EtherCalc "room" to a local file
 }
+\seealso{
+Other EthercCalc importers/exporters: \code{\link{ec_append}},
+  \code{\link{ec_edit}}, \code{\link{ec_read}}
+}
+\concept{EthercCalc importers/exporters}
