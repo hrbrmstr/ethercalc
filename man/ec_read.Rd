@@ -16,6 +16,12 @@ ec_read(room, ..., ec_host = ethercalc_host())
 \description{
 Read an EtherCalc "room" to a local data frame
 }
+\examples{
+\dontrun{
+ec_edit(mtcars, "mtcars")
+ec_read("mtcars")
+}
+}
 \seealso{
 Other EthercCalc importers/exporters: \code{\link{ec_append}},
   \code{\link{ec_edit}}, \code{\link{ec_export}}

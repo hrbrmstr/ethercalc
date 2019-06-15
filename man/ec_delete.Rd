@@ -15,5 +15,7 @@ ec_delete(room, ec_host = ethercalc_host())
 Delete a "room" from an EtherCalc instance
 }
 \examples{
+\dontrun{
 ec_delete("test")
+}
 }

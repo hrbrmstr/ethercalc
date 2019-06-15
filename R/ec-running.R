@@ -3,6 +3,9 @@
 #' @param timeout how long to wait (useful if accessing a remote ethercalc)
 #' @param ec_host See [ethercalc_host()]
 #' @export
+#' @examples \dontrun{
+#' ec_running()
+#' }
 ec_running <- function(timeout = 1, ec_host = ethercalc_host()) {
 
   res <- try(httr::GET(ec_host, httr::timeout(timeout)), silent = TRUE)

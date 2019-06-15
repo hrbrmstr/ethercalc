@@ -9,8 +9,9 @@
 #'        internal-use only `_formdata` rooms.
 #' @param ec_host See [ethercalc_host()]
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' ec_list()
+#' }
 ec_list <- function(all = FALSE, ec_host = ethercalc_host()) {
 
   httr::GET(

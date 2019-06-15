@@ -14,6 +14,9 @@
 #' @param args optional arguments to pass in to the `ethercalc` executable
 #' @return a `processx` `process` object
 #' @export
+#' @examples \dontrun{
+#' ec_start()
+#' }
 ec_start <- function(host = "localhost", port = 8000, args = NULL) {
 
   ec_cmd <- Sys.which("ethercalc")

@@ -20,5 +20,7 @@ the full URL to the newly created room (invisibly)
 Create a new, empty EtherCalc "room"
 }
 \examples{
+\dontrun{
 ec_new("test")
+}
 }

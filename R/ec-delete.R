@@ -3,8 +3,9 @@
 #' @param room name of an EtherCalc "room"
 #' @param ec_host See [ethercalc_host()]
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' ec_delete("test")
+#' }
 ec_delete <- function(room, ec_host = ethercalc_host()) {
 
   ec_host <- sub("/$", "", ec_host[1])

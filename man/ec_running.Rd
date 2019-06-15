@@ -14,3 +14,8 @@ ec_running(timeout = 1, ec_host = ethercalc_host())
 \description{
 Export an EtherCalc "room" to a local data frame
 }
+\examples{
+\dontrun{
+ec_running()
+}
+}

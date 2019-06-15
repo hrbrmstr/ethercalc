@@ -25,7 +25,9 @@ Edit a data frame in a new or existing EtherCalc "room"
 You will receive an error if \code{x} has a total cell count over 500,000.
 }
 \examples{
+\dontrun{
 ec_edit(iris, "test")
+}
 }
 \seealso{
 Other EthercCalc importers/exporters: \code{\link{ec_append}},

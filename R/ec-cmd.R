@@ -6,8 +6,9 @@
 #' @param room name of an EtherCalc "room"
 #' @param ec_host See [ethercalc_host()]
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' ec_cmd(c("set A1:E1 font normal bold \* \*", "deleterow A12"), "test")
+#' }
 ec_cmd <- function(commands = "", room, ec_host = ethercalc_host()) {
 
   room <- room[1]

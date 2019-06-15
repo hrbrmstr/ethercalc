@@ -36,8 +36,10 @@ Since this is an append operation the header will not be sent. Set
 You will receive an error if \code{x} has a total cell count over 500,000.
 }
 \examples{
+\dontrun{
 ec_edit(iris, "test")
 ec_append(iris, "test")
+}
 }
 \seealso{
 Other EthercCalc importers/exporters: \code{\link{ec_edit}},

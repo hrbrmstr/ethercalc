@@ -8,8 +8,9 @@
 #' @param ec_host See [ethercalc_host()]
 #' @family EthercCalc importers/exporters
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' ec_edit(iris, "test")
+#' }
 ec_edit <- function(x, room = NULL, browse = TRUE, ..., ec_host =ethercalc_host()) {
 
   stopifnot(is.data.frame(x))

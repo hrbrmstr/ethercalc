@@ -19,5 +19,7 @@ ending in \code{_formdata} are for internal API use only and should
 not be used as "room" names.
 }
 \examples{
+\dontrun{
 ec_list()
+}
 }

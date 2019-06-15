@@ -9,8 +9,9 @@
 #' @param force Force setting a new EtherCalc ETHERCALC_HOST info for the current environment?
 #' @return atomic character vector containing the EtherCalc ETHERCALC_HOST value
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' ethercalc_host("http://localhost:8000")
+#' }
 ethercalc_host <- function(force = FALSE) {
 
   env <- sub("/$", "", Sys.getenv("ETHERCALC_HOST"))

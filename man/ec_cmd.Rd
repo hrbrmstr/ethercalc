@@ -17,5 +17,7 @@ ec_cmd(commands = "", room, ec_host = ethercalc_host())
 TODO find a cmd ref
 }
 \examples{
+\dontrun{
 ec_cmd(c("set A1:E1 font normal bold \\* \\*", "deleterow A12"), "test")
+}
 }

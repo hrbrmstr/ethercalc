@@ -5,6 +5,10 @@
 #' @param ec_host See [ethercalc_host()]
 #' @family EthercCalc importers/exporters
 #' @export
+#' @examples \dontrun{
+#' ec_edit(mtcars, "mtcars")
+#' ec_read("mtcars")
+#' }
 ec_read <- function(room, ..., ec_host = ethercalc_host()) {
 
   room <- room[1]

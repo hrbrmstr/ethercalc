@@ -5,8 +5,9 @@
 #' @param ec_host See [ethercalc_host()]
 #' @return the full URL to the newly created room (invisibly)
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' ec_new("test")
+#' }
 ec_new <- function(room, browse = TRUE, ec_host = ethercalc_host()) {
 
   room <- room[1]

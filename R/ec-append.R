@@ -14,9 +14,10 @@
 #' @return the commands used by EtherCalc to process the append operation (invisibly)
 #' @family EthercCalc importers/exporters
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' ec_edit(iris, "test")
 #' ec_append(iris, "test")
+#' }
 ec_append <- function(x, room, at = "end", append = TRUE, col_names = FALSE,
                       browse = FALSE, ..., ec_host =ethercalc_host()) {
 

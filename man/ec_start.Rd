@@ -26,3 +26,8 @@ also add arguments to the call via the \code{args} parameter.
 You \emph{really} should consider installing and running a local copy of \code{redis} to get
 an efficient, persistent store for your spreadsheets.
 }
+\examples{
+\dontrun{
+ec_start()
+}
+}

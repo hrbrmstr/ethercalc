@@ -19,5 +19,7 @@ easiest way to accomplish this is to set it in the \code{.Renviron} file in your
 home directory.
 }
 \examples{
+\dontrun{
 ethercalc_host("http://localhost:8000")
+}
 }

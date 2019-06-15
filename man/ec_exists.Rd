@@ -15,5 +15,7 @@ ec_exists(room, ec_host = ethercalc_host())
 Does an EtherCalc "room" name exist?
 }
 \examples{
+\dontrun{
 ec_exists("test")
+}
 }
